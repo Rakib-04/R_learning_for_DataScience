@@ -1,0 +1,47 @@
+---
+title: "R Markdown practice"
+output: html_document
+date: "2024-09-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# use setting option right behind the chunk to let the user know what u want.
+```
+# Introduction
+
+
+Hi, this is Rakib. I am starting learning *r language* and it new **functionalities** 
+Here, I regularly posted my scripts in GitHub [Link](https://github.com/Rakib-04?tab=repositories)
+
+# R code
+
+```{r first chunk}
+values <- rnorm(5)
+values
+?rnorm # To ask help use ? symbol
+#Always naming the chunk to track the newly created markdown.
+library(tidyverse)
+
+```
+
+Ordered lists: 
+
+1. First
+
+2. Second
+
+Ways to insert image: ![alt text](C:\Users\Rakib\Pictures\R_markdown.png){width="40%"}
+
+Ways to add footnotes^[footer:Rakib]
+
+```{r}
+library(knitr)
+
+data()
+
+tooth <- head(ToothGrowth)
+kable(tooth)
+```
+
+
